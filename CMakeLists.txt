@@ -4,4 +4,5 @@ project(class_lab)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(class_lab main.cpp
-        watersource.h)
+        watersource.h
+        CAReservoir.h)
