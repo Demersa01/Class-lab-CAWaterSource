@@ -10,7 +10,7 @@
 
 #include "watersource.h"
 
-class Reservoir : public WaterSource
+class CAReservoir : public WaterSource
 {
 public:
     /**
@@ -18,17 +18,39 @@ public:
      * @param capacity
      * @return none
      */
-    Reservoir(double capacity);
+    CaliforniaReservoir(std::string name, int capacity, int percentageCap);
+
+    /** Mutator method for capacity
+     * @param int cap
+     * @return no return
+     */
+     void setCapacity(int cap);
+
+    /**
+     * Accessor method for  capacity
+     * @param no parameters
+     * @return in capacity
+     */
+     int getCapacity() const;
+
+     /**
+      * Accessor method for percentage capacity
+      * @param no parameters
+      * @return in percentageCap
+      */
+      int getPrecentageCap() const;
+
 
     /**
       * Display object data to console
       * @param none
       * @return none
       */
-    void display();
+    void display() const;
 
 private:
-    double capacity;
+    int capacity;
+    int percentageCap;
 };
 
 
