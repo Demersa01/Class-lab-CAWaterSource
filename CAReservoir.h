@@ -1,3 +1,5 @@
+#include <iostream>
+
 /**
  * Def of derived CAReservoir object, including
  * data for capacity, %capacity
@@ -18,7 +20,7 @@ public:
      * @param capacity
      * @return none
      */
-    CaliforniaReservoir(std::string name, int capacity, int percentageCap);
+    CAReservoir(std::string name, int capacity, int percentageCap);
 
     /** Mutator method for capacity
      * @param int cap
